@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   node: circleci/node@1.1.6
 jobs:
-  build-and-test:
+  build:
     working_directory: ~/hello-react
     executor:
       name: node/default
@@ -11,8 +11,8 @@ jobs:
       - node/with-cache:
           steps:
             - run: yarn install
-            - run: yarn test
+
 workflows:
-    build-and-test:
+    build:
       jobs:
-        - build-and-test
+        - build
