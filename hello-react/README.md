@@ -6,4 +6,4 @@ JSX 기초
 
 실습 결과
 -----------
-![ch2](./ch2.jpg)
+<img src="./readme_img/ch2.jpg" width="600" height="400">
